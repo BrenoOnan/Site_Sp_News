@@ -1,25 +1,28 @@
-header{ /* formatação do cabeçalho */
+header { /* formatação do cabeçalho */
 
-    padding: 30px 30px 20px 30px;
+    padding: 30px 20px;
     color: white;
     background-image: url(https://wallpaperaccess.com/full/2170265.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    z-index: 1;                /* atrás do conteúdo */
-    
+    z-index: 1; /* atrás do conteúdo */
+
 }
 
 header::before {
+
     content: "";
     position: absolute;
     inset: 0; /* top, right, bottom, left = 0 */
     background-color: rgba(0, 0, 0, 0.3); /* controla a transparência */
     z-index: -1;
+
 }
 
-nav > a{ /* ancora dentro do nav */
+nav > a { /* ancora dentro do nav */
+
     color: white;
     padding: 5px;
     display: inline-block;
@@ -29,137 +32,186 @@ nav > a{ /* ancora dentro do nav */
 
 }
 
-nav > a:hover{ /* passar mouse na ancora decora underline */
+nav > a:hover { /* passar mouse na ancora decora underline */
 
-    text-decoration: underline ;
+    text-decoration: underline;
 
 }
 
-body{ /* cor(body) fundo da pagina */
+body { /* cor(body) fundo da pagina */
 
+    font-size: clamp(16px, 2.5vw, 19px);
+    line-height: 1.3;
     font-family: Arial, Helvetica, sans-serif;
     background-color: dimgray;
     margin: 0px;
-    
+
 }
 
-       
-h1{ /* titulo nv1 */
+h1 { /* titulo principal */
 
+    font-size: clamp(23px, 5vw, 37px);
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     padding: 35px;
+
 }
 
-#h1{ /* titulo nv1 id */
+#h1 { /* titulo nv1 noticia */
 
-    background-color: rgba(155, 167, 180, 0.493);
-    border-radius: 5px;
-    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.822);
-    padding: 10px;
+    font-size: clamp(23px, 5vw, 37px);
+    background-color: rgba(243, 245, 246, 0.493);
+    box-shadow: 0px 4px 0px -2px blue;
+    padding: 13px;
     margin: 35px;
+
 }
 
-h2{ /* titulo nv2 */
+h2 { /* titulo nv2 */
 
+    font-size: clamp(20px, 4vw, 30px);
     text-align: center;
     padding: 15px;
     margin-bottom: 30px;
 
 }
 
-h3{ /* titulo nv3 */
+h3 { /* titulo nv3 */
 
-    font-size: xx-large;
+    font-size: clamp(18px, 3.5vw, 24px);
     margin-bottom: 55px;
     text-align: center;
 
 }
 
-h4{
-    text-align: center;
+h4 {
+
+    font-size: clamp(15px, 3.2vw, 19px);
+
 }
 
-p{ /* all paragrafos  */
-    
+p { /* all paragrafos */
+
     text-indent: 25px;
-    font-size:large ;
-    text-align: center;
+    text-align: left;
 
 }
 
-span{
+span {
+
     color: blue;
+
 }
 
-.text-center{ /* centralizar textos */
-    text-align: center;
-}
-
-img{ /* centralizar imagem */
+img { /* centralizar imagem */
 
     display: block;
     margin: auto;
 
 }
 
-main{ /* sessão principal */
+main { /* sessão principal */
 
     background-color: white;
     padding: 15px 20px;
     margin: 0px 10px;
     border-radius: 0px 0px 25px 25px;
+
 }
 
-article > p{
-    font-size: 1.3em;
-}
+.article-brasil { /* sessão noticias brasil */
 
-.article-brasil{ /* sessão noticias brasil */
-
+    width: 85%;
     margin: auto;
-    background-image: linear-gradient(to bottom, rgba(1, 170, 1, 0.562), yellow);
-    border: 5px;
+    background-image: linear-gradient(to bottom, rgba(1, 200, 1, 0.562), rgba(255, 255, 0, 0.811));
     border-radius: 8px;
-    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.808);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.808);
     padding: 18px 25px;
+
 }
 
-.article-full{ /* sessão noticias todas págínas */
+.article-full { /* sessão noticias todas págínas */
+
     margin: auto;
-    background: linear-gradient(to bottom, #f1f1f1, #e7e7e78c);
-    border: 5px;
+    background: linear-gradient(to bottom, #f1f1f1, #ececec8c);
     border-radius: 8px;
-    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.808);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.808);
     padding: 25px 25px;
+
 }
 
-
-
-aside{ /* Conteudo relativo(presidêncaia) */
-
-    font-size: x-large;
-}
-
-
-.img-noticia { /* Img Rio de Janeiro */
+.img-noticia { /* Todas Imagens */
 
     display: block;
-    width: 85%;         /* proporcional à tela */
-    max-width: 1500px;
+    width: 85%; /* proporcional à tela */
+    max-width: 900px;
     min-width: 180px;
     height: auto;
     margin: auto;
-    padding: 1px;
-    border-radius: 15px;
     box-shadow: 3px 3px 5px black;
+
 }
 
-footer{ /* Rodapé powered by */
-    
+footer { /* Rodapé powered by */
+
     color: black;
     text-align: end;
-    padding: 8px 30px;
+    padding: 8px 30px 0px 30px;
     margin: 0px;
+
+}
+
+section > div#container {
+
+    overflow-x: auto;
+
+}
+
+table {
+
+    margin: auto;
+    border-collapse: collapse;
+    width: 95%;
+    max-width: 900px;
+    min-width: 600px;
+
+}
+
+caption {
+
+    background-color: rgba(233, 232, 232, 0.929);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3em;
+    border: 2px solid black;
+    border-radius: 5px 5px 0px 0px;
+    padding: 10px;
+
+}
+
+tbody > tr:nth-child(odd) {
+
+    background-color: rgba(224, 224, 224, 0.866);
+
+}
+
+td,
+th {
+
+    text-align: center;
+    border: 2px solid black;
+    padding: 8px 4px;
+
+}
+
+thead > tr {
+
+    color: white;
+    background-color: rgb(83, 121, 186);
+
+}
+
+td.nome {
+
+    text-align: left;
 
 }
