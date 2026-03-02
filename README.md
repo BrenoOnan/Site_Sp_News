@@ -1,6 +1,6 @@
 *EM DESENVOLVIMENTO*
 
-**Acesse o Site> https://brenoonan.github.io/Site_Sp_News/**
+**Acesse o Site> 
 
 📰 Site_Sp_News
 
